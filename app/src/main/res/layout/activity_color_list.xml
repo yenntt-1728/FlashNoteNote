@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.example.flashnotenote.screen.moreinfo.color.ListColorActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarColorList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorRed"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarColorList"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/item_circle_red"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorRed"
+            app:layout_constraintTop_toTopOf="@+id/colorRed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorRed"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:text="Red"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorRed"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorRed"
+            app:layout_constraintBottom_toBottomOf="@id/colorRed"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorPurple"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorRed"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/circle_purple"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textPurple"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorPurple"
+            app:layout_constraintTop_toTopOf="@+id/colorPurple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorPurple"
+            android:text="Purple"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorPurple"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorPurple"
+            app:layout_constraintBottom_toBottomOf="@id/colorPurple"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorGreen"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorPurple"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/circle_green"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textGreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorGreen"
+            app:layout_constraintTop_toTopOf="@+id/colorGreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorGreen"
+            android:text="Green"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorGreen"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorGreen"
+            app:layout_constraintBottom_toBottomOf="@id/colorGreen"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorBlue"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorGreen"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/circle_blue"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textBlue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorBlue"
+            app:layout_constraintTop_toTopOf="@+id/colorBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorBlue"
+            android:text="Blue"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorBlue"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorBlue"
+            app:layout_constraintBottom_toBottomOf="@id/colorBlue"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorYellow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorBlue"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/circle_yellow"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textYellow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorYellow"
+            app:layout_constraintTop_toTopOf="@+id/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorYellow"
+            android:text="Yellow"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorYellow"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorYellow"
+            app:layout_constraintBottom_toBottomOf="@id/colorYellow"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorBrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorYellow"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/circle_brow"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textBrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorBrow"
+            app:layout_constraintTop_toTopOf="@+id/colorBrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorBrow"
+            android:text="Brow"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorBrow"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorBrow"
+            app:layout_constraintBottom_toBottomOf="@id/colorBrow"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/colorOrange"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorBrow"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/circle_orange"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textOrange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/colorOrange"
+            app:layout_constraintTop_toTopOf="@+id/colorOrange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/colorOrange"
+            android:text="Orange"
+            android:textColor="@color/colorBlack"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageTickColorOrange"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/colorOrange"
+            app:layout_constraintBottom_toBottomOf="@id/colorOrange"
+            android:onClick="@{(view) -> listener.getColor(view)}"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_icon_save"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
