@@ -5,5 +5,13 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorWhite">#FFFF</color>
     <color name="colorBlack">#000</color>
+    <color name="color_red">#D8175B</color>
+    <color name="color_purple">#A211D8</color>
+    <color name="color_green">#308F3A</color>
+    <color name="color_blue">#03A9F4</color>
+    <color name="color_yellow">#FFEB3B</color>
+    <color name="color_brown">#705149</color>
+    <color name="color_orange">#DA603A</color>
+    <drawable name="sponsored_article_background">#D8175B</drawable>
 
 </resources>

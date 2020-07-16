@@ -9,7 +9,10 @@ import com.example.flashnotenote.database.EntityNote
 import com.example.flashnotenote.model.Note
 import com.example.flashnotenote.screen.calendar.CalendarActivity
 import com.example.flashnotenote.screen.createnote.CreateNoteActivity
+import com.example.flashnotenote.utils.SpManager
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
@@ -24,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         }
         imageCreateNote.setOnClickListener {
             val intent = Intent(this, CreateNoteActivity::class.java)
+            val calendar : Calendar = Calendar.getInstance()
+            intent.putExtra("date", calendar.time)
             startActivity(intent)
         }
         viewModel = MainViewModel(applicationContext)
@@ -36,7 +41,8 @@ class MainActivity : AppCompatActivity() {
                     content = note.content,
                     sound = note.sound,
                     date = note.date,
-                    time = note.time
+                    time = note.time,
+                    color = note.color
                 )
                 arrayListNote.add(note)
             }

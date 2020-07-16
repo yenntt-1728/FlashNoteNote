@@ -5,6 +5,9 @@
         <variable
             name="viewModel"
             type="com.example.flashnotenote.screen.calendar.CalendarViewModel" />
+        <variable
+            name="listener"
+            type="com.example.flashnotenote.screen.calendar.CalendarActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,20 +24,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-<!--            <androidx.appcompat.widget.AppCompatImageView-->
-<!--                android:id="@+id/imageBack"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:src="@drawable/ic_back_24" />-->
         </androidx.appcompat.widget.Toolbar>
 
-        <CalendarView
+        <com.example.flashnotenote.screen.calendar.CustomCalendar
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolBarCalendar" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/imageCreateNoteCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DA039D"
+            android:src="@drawable/ic_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

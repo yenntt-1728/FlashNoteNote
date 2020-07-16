@@ -17,6 +17,7 @@
             android:id="@+id/toolbarColorList"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:title="Color List"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -73,6 +74,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/colorPurple"
             android:text="Purple"
+            android:onClick="@{(view) -> listener.getColor(view)}"
             android:textColor="@color/colorBlack"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -82,7 +84,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/colorPurple"
             app:layout_constraintBottom_toBottomOf="@id/colorPurple"
-            android:onClick="@{(view) -> listener.getColor(view)}"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_icon_save"
             android:visibility="gone"/>
@@ -105,6 +106,7 @@
             app:layout_constraintTop_toTopOf="@+id/colorGreen"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/colorGreen"
+            android:onClick="@{(view) -> listener.getColor(view)}"
             android:text="Green"
             android:textColor="@color/colorBlack"/>
 
@@ -115,7 +117,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/colorGreen"
             app:layout_constraintBottom_toBottomOf="@id/colorGreen"
-            android:onClick="@{(view) -> listener.getColor(view)}"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_icon_save"
             android:visibility="gone"/>
@@ -139,6 +140,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/colorBlue"
             android:text="Blue"
+            android:onClick="@{(view) -> listener.getColor(view)}"
             android:textColor="@color/colorBlack"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -148,7 +150,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/colorBlue"
             app:layout_constraintBottom_toBottomOf="@id/colorBlue"
-            android:onClick="@{(view) -> listener.getColor(view)}"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_icon_save"
             android:visibility="gone"/>
@@ -172,6 +173,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/colorYellow"
             android:text="Yellow"
+            android:onClick="@{(view) -> listener.getColor(view)}"
             android:textColor="@color/colorBlack"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -181,7 +183,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/colorYellow"
             app:layout_constraintBottom_toBottomOf="@id/colorYellow"
-            android:onClick="@{(view) -> listener.getColor(view)}"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_icon_save"
             android:visibility="gone"/>
@@ -205,6 +206,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/colorBrow"
             android:text="Brow"
+            android:onClick="@{(view) -> listener.getColor(view)}"
             android:textColor="@color/colorBlack"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -214,7 +216,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/colorBrow"
             app:layout_constraintBottom_toBottomOf="@id/colorBrow"
-            android:onClick="@{(view) -> listener.getColor(view)}"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_icon_save"
             android:visibility="gone"/>
@@ -238,6 +239,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@+id/colorOrange"
             android:text="Orange"
+            android:onClick="@{(view) -> listener.getColor(view)}"
             android:textColor="@color/colorBlack"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -247,7 +249,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/colorOrange"
             app:layout_constraintBottom_toBottomOf="@id/colorOrange"
-            android:onClick="@{(view) -> listener.getColor(view)}"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_icon_save"
             android:visibility="gone"/>

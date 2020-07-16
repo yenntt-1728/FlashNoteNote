@@ -7,8 +7,14 @@ import kotlinx.android.parcel.Parcelize
 data class Note (
     var title : String? = null,
     var content : String ="",
-    var color : String = "",
+    var color : Int = 0,
     var sound : String = "",
-    var time: String = "",
+    var time: String? = "",
     var date: String = ""
-) : Parcelable
+) : Parcelable {
+
+    public fun checkColor() : Boolean{
+        return color != null
+    }
+
+}

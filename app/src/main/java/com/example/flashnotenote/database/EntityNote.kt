@@ -12,11 +12,11 @@ class EntityNote (
     @ColumnInfo(name = "content")
     val content : String,
     @ColumnInfo(name = "color")
-    val color : String,
+    val color : Int,
     @ColumnInfo(name = "sound")
     val sound : String,
     @ColumnInfo(name = "date")
     val date : String,
     @ColumnInfo(name = "time")
-    val time : String
+    val time : String?
 )
